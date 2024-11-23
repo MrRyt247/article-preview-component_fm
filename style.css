@@ -1,0 +1,47 @@
+:root {
+  --red: hsl(0, 43%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --lightGrayishBlue: hsl(217, 19%, 35%);
+  --darkGrayishBlue: hsl(186, 14%, 43%);
+  --veryDarkBlue: hsl(183, 100%, 15%);
+  --strongBlue: hsl(172, 67%, 45%);
+  --lightStrongBlue: hsl(172, 68%, 50%);
+  --grayishBlue: hsl(184, 14%, 56%);
+  --veryLightGrayishBlue: hsl(189, 41%, 97%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--lightGrayishBlue);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", Roboto, system-ui, sans-serif;
+  font-weight: 700;
+  overflow: hidden auto;
+}
+
+.attribution {
+  font-family: monospace, "Courier New";
+  font-size: 11px;
+  font-weight: 700;
+  margin-inline: auto;
+  -webkit-user-select: none;
+  user-select: none;
+
+  a:first-child {
+    text-decoration: none;
+    color: rgb(2, 48, 255);
+  }
+
+  a:last-child {
+    text-decoration: none;
+    color: red;
+  }
+}
