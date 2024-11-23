@@ -167,7 +167,7 @@ body {
         background-color: var(--veryDarkGrayishBlue);
       }
       #share:hover {
-        background-color: var(--desaturatedDarkBlue);
+        background-color: var(--lightGrayishBlue);
         cursor: pointer;
 
         img {
@@ -231,7 +231,7 @@ body {
         position: relative;
         margin-bottom: unset;
         padding-block: 0.5rem;
-        #share {    
+        #share {
           position: unset;
 
           img {
