@@ -1,5 +1,4 @@
 :root {
-  --red: hsl(0, 43%, 52%);
   --lightGrayishBlue: hsl(210, 46%, 95%);
   --veryDarkGrayishBlue: hsl(217, 19%, 35%);
   --desaturatedDarkBlue: hsl(214, 17%, 51%);
@@ -35,8 +34,9 @@ body {
   margin-block: auto;
   margin-inline: auto;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 10px 0 #0003;
+  box-shadow: 0 10px 20px 2px #0003;
+  -webkit-user-select: none;
+  user-select: none;
 
   img {
     height: 300px;
@@ -47,7 +47,7 @@ body {
   .content {
     display: flex;
     flex-direction: column;
-    background-color: var(--lightGrayishBlue);
+    background-color: white;
     height: 300px;
     border-radius: 0 10px 10px 0;
 
@@ -110,7 +110,7 @@ body {
         justify-content: center;
         width: 2rem;
         height: 2rem;
-        background-color: var(--veryDarkGrayishBlue);
+        background-color: var(--grayishBlue);
         position: relative;
         border-radius: 50%;
 
@@ -152,6 +152,7 @@ body {
         }
         img:hover {
           scale: 1.2;
+          cursor: pointer;
         }
       }
       .tooltip::after {
@@ -167,6 +168,8 @@ body {
       }
       #share:hover {
         background-color: var(--desaturatedDarkBlue);
+        cursor: pointer;
+
         img {
           filter: brightness(100);
         }
